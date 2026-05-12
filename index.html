@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(https://static.wikia.nocookie.net/rise-of-the-brave-tangled-dragons/images/a/ad/Wreck-it-ralph_00011507.jpg/revision/latest?cb=20140915200723);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center">
+    <div class="bg-white bg-opacity-80 shadow-lg rounded-lg p-8 w-full max-w-md">
+        <h2 class="text-2xl font-bold text-pink-600 mb-6 text-center">
+            Cadastre-se para participar da corrida mais doce do mundo!
+        </h2>
+        <form action="cadastro.php" method="post" class="space-y-4">
+            <div>
+                <label for="inome" class="block text-pink-700 font-semibold">Nome:</label>
+                <input type="text" name="nome" id="inome" required 
+                       class="border border-pink-300 p-2 rounded w-full focus:outline-none focus:ring-2 focus:ring-pink-400">
+            </div>
+            <div>
+                <label for="iidade" class="block text-pink-700 font-semibold">Idade:</label>
+                <input type="number" name="idade" id="iidade" min="1" required 
+                       class="border border-pink-300 p-2 rounded w-full focus:outline-none focus:ring-2 focus:ring-pink-400">
+            </div>
+            <div>
+                <label for="iemail" class="block text-pink-700 font-semibold">Email:</label>
+                <input type="email" name="email" id="iemail" required
+                       class="border border-pink-300 p-2 rounded w-full focus:outline-none focus:ring-2 focus:ring-pink-400">
+            </div>
+            <div class="text-center">
+                <input type="submit" value="Enviar" 
+                       class="bg-pink-500 text-white px-6 py-2 rounded-lg shadow hover:bg-pink-600 transition">
+            </div>
+        </form>
+    </div>
+</body>
